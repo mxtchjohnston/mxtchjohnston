@@ -1,6 +1,6 @@
 import { Tab } from "@headlessui/react";
 
-export default function Nav(props: any) {
+export default function Nav() {
   return (
     <Tab.Group>
       <Tab.List className="tabs tabs-lifted tabs-lg">
