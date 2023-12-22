@@ -1,6 +1,7 @@
 import { type Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
 import { type AppType } from "next/app";
+import React from "react";
 
 import { api } from "~/utils/api";
 
@@ -10,6 +11,8 @@ const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
+  const ctx = React.createContext({});
+  
   return (
     <SessionProvider session={session}>
       <Component {...pageProps} />
