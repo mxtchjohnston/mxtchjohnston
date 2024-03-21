@@ -3,9 +3,18 @@ import Link from "next/link";
 import { CreatePost } from "~/app/_components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
+import { ModeToggle } from "~/components/ModeToggle";
 
 export default async function Home() {
-  return DemoPage();
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center text-white">
+      <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] ">
+        mxtchjohnston
+        <ModeToggle/>
+      </h1>
+    </main>
+  )
+  
 }
 
 async function DemoPage() {
