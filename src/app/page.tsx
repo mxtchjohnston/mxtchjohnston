@@ -7,7 +7,7 @@ import { ModeToggle } from "~/components/ModeToggle";
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center text-white">
+    <main className="flex min-h-screen flex-col items-center justify-center">
       <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] ">
         mxtchjohnston
         <ModeToggle/>
