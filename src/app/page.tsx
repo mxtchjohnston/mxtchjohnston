@@ -3,15 +3,12 @@ import Link from "next/link";
 import { CreatePost } from "~/app/_components/create-post";
 import { getServerAuthSession } from "~/server/auth";
 import { api } from "~/trpc/server";
-import { ModeToggle } from "~/components/ModeToggle";
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start">
-      <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] ">
-        mxtchjohnston
-      </h1>
-      <ModeToggle/>
+    <main className="flex min-h-screen flex-col items-start mx-5 mt-10">
+      <h1 className="text-5xl font-extrabold sm:text-[5rem]">mxtchjohnston</h1>
+      <article>Under contruction</article>
     </main>
   )
   
