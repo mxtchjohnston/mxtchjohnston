@@ -7,11 +7,11 @@ import { ModeToggle } from "~/components/ModeToggle";
 
 export default async function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <main className="flex min-h-screen flex-col items-start">
       <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem] ">
         mxtchjohnston
-        <ModeToggle/>
       </h1>
+      <ModeToggle/>
     </main>
   )
   
